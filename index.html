@@ -832,7 +832,6 @@
 <!-- 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script> -->
 	<script>
 document.addEventListener('DOMContentLoaded', function (){
-	setTimeout(function(){
 		[
 			'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ',
 			'js/app.min.js'].forEach(src=>{
@@ -841,8 +840,8 @@ document.addEventListener('DOMContentLoaded', function (){
 					script.src = src;
 					script.async = false;
 					document.body.appendChild(script);
-	}, 1000)
 			})
+})		})
 })
 	</script>
 <!-- 		<script defer src="js/app.min.js?_v=20221019163236"></script> -->
