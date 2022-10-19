@@ -834,12 +834,12 @@
 document.addEventListener('DOMContentLoaded', function startScript(){
 	
 	const scriptMap = document.createElement('script');
-		scriptMap.scr.type = 'text/javascript';
+		scriptMap.type = 'text/javascript';
 		scriptMap.src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ';
 		document.body.appendChild(scriptMap);
 
 	const script = document.createElement('script');
-	script.scr.type = 'text/javascript';
+	script.type = 'text/javascript';
 		script.src='js/app.min.js';
 		document.body.appendChild(script);
 })
