@@ -831,15 +831,17 @@
 		<link rel="preload" href="css/style.min.css?_v=20221019163236" as="style" onload="this.rel='stylesheet'">
 <!-- 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script> -->
 	<script>
-	document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', function startScript(){
+	
 	const scriptMap = document.createElement('script');
 		scriptMap.src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ';
 		document.body.appendChild(scriptMap);
 
-		const script = document.createElement('script');
+	const script = document.createElement('script');
 		script.src='js/app.min.js';
 		document.body.appendChild(script);
 })
+setTimeout(startScript, 2000);
 	</script>
 <!-- 		<script defer src="js/app.min.js?_v=20221019163236"></script> -->
 	</body>
