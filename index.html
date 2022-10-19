@@ -833,18 +833,17 @@
 	<script>
 document.addEventListener('DOMContentLoaded', function (){
 	setTimeout(function(){
-const scriptMap = document.createElement('script');
-		scriptMap.type = 'text/javascript';
-		scriptMap.src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ';
-		document.body.appendChild(scriptMap);
-
-	const script = document.createElement('script');
-	script.type = 'text/javascript';
-		script.src='js/app.min.js';
-		document.body.appendChild(script);
+		[
+			'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ',
+			'js/app.min.js'].forEach(src=>{
+				const script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = src;
+					script.async = false;
+					document.body.appendChild(script);
 	}, 1000)
+			})
 })
-
 	</script>
 <!-- 		<script defer src="js/app.min.js?_v=20221019163236"></script> -->
 	</body>
