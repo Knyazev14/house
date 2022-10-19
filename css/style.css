@@ -372,6 +372,10 @@ body.lock {
   margin-bottom: 50px;
 }
 
+.card__splide-img {
+  width: 100%;
+}
+
 .card__bottom {
   padding: 0 26px;
 }
@@ -1171,6 +1175,10 @@ body.lock {
 .other__card-text {
   color: #878080;
   margin-bottom: 20px;
+}
+
+.other__card-img {
+  width: 100%;
 }
 
 .other__btn-wrapper {
