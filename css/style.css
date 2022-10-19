@@ -374,6 +374,7 @@ body.lock {
 
 .card__splide-img {
   width: 100%;
+  height: auto;
 }
 
 .card__bottom {
@@ -1179,6 +1180,7 @@ body.lock {
 
 .other__card-img {
   width: 100%;
+  height: auto;
 }
 
 .other__btn-wrapper {
