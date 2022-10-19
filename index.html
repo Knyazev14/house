@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.header__body{display:flex;justify-content:space-between;padding-top:53px;position:relative;z-index:5}.header__contacts{display:flex;align-items:center;position:relative}.header__contacts-btn{margin-bottom:10px;margin-left:22px}@media (min-width:960px){.header__contacts-btn{order:2;margin-left:16px;margin-bottom:0}}.header__contacts-phone{position:absolute;bottom:-18px;right:10px}@media (min-width:960px){.header__contacts-phone{position:static;margin-left:12px}}.menu.active .menu__items{left:0}@media (min-width:960px){.menu__box{display:flex}}@media (min-width:1920px){.menu__box{align-items:center}}.menu__icon{width:34px;height:16px;position:relative;margin-bottom:15px;line-height:19px}@media (min-width:960px){.menu__icon{margin-right:20px}}@media (min-width:1920px){.menu__icon{width:40px;height:20px;margin-bottom:0}}.menu__icon:before,.menu__icon:after,.menu__icon span{background:#fff;position:absolute;left:0;width:100%;height:2px}.menu__icon:before{content:'';top:0}.menu__icon:after{content:'';bottom:0}
+.menu__icon span{top:50%;transform:translate(0,-50%)}.menu__icon-text{color:#fff}@media (min-width:1366px){.menu__icon-text{font-size:18px}}@media (min-width:1920px){.menu__icon-text{font-size:25px}}.menu__items{position:fixed;top:0;left:-100%;background:#242424;width:100%;height:100%;z-index:50;display:flex;align-items:center;flex-direction:column;padding:100px 15px;overflow-y:auto;transition:left .3s ease}@media (min-width:960px){.menu__items{width:50%;overflow:auto;-ms-overflow-style:none;scrollbar-width:none}}.menu__items::-webkit-scrollbar{width:0;height:0}.menu__cross{position:absolute;top:20px;right:30px;width:20px;height:20px;background-repeat:no-repeat;background-size:cover !important}.menu__list{display:flex;flex-direction:column;align-items:center;margin-bottom:90px}.menu__list-item+.menu__list-item{margin-top:18px}.menu__list-link{color:#fff}@media (min-width:1366px){.menu__list-link{font-size:24px;line-height:28px}}.actions-items{display:flex;flex-direction:column;align-items:center}
+.actions-items__phone-actions{font-weight:600;font-size:24px;line-height:29px;margin-bottom:17px}.actions-items__btn{margin-bottom:37px}.actions-items__social{max-width:75px;display:flex;align-items:center;justify-content:space-between}.phone-actions{color:#fff;line-height:19px}@media (min-width:1366px){.phone-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.phone-actions{font-size:25px;line-height:29px}}.btn-actions{color:#fff;line-height:19px;border:.883234px solid #fff;border-radius:88.3234px;padding:8px 20px}@media (min-width:1366px){.btn-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.btn-actions{font-size:25px;line-height:29px}}.telegram{margin-right:12px}.telegram__btn{width:17px;height:14px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.telegram__btn{width:28px;height:23px}}.whatsapp__btn{width:18px;height:17px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.whatsapp__btn{width:28px;height:27px}
+}.banner:before{content:'';position:absolute;top:0;left:0;bottom:0;width:100%;background:rgba(0,0,0,.65);z-index:4}.banner{position:relative;top:-105px}.banner__img{position:absolute;top:0;left:0;background-repeat:no-repeat;object-fit:cover !important;background-position:50% 50%;width:100%;height:100%}.banner__body{position:relative;z-index:4;padding-top:190px;height:100%}.banner__title{display:inline-flex;flex-direction:column}.banner__title-text{font-size:28px;line-height:35px;max-width:384px;margin-bottom:22px}@media (min-width:1360px){.banner__title-text{font-size:42px;line-height:49px;max-width:546px;margin-bottom:51px}}@media (min-width:1920px){.banner__title-text{font-size:50px;line-height:70px;max-width:650px}}@media (min-width:960px){.banner__columns-item{display:flex}}.banner__btn{margin-top:50px;padding:17px 34px;margin-bottom:15px}@media (min-width:1360px){.banner__btn{margin-top:70px}}@media (min-width:1920px){.banner__btn{font-size:28px;line-height:34px}}.banner__sub-text{font-size:14px;line-height:20px;max-width:196px;margin-bottom:190px}
+@media (min-width:960px){.banner__sub-text{margin-bottom:30px}}@media (min-width:1920px){.banner__sub-text{font-size:22px;line-height:34px;max-width:330px}}.banner__label{position:absolute;bottom:156px;right:-20px;z-index:4;cursor:pointer}@media (min-width:960px){.banner__label{bottom:110px}}@media (min-width:1920px){.banner__label{bottom:170px}}.banner__bottom{background:rgba(255,255,255,.3);backdrop-filter:blur(19.2999px);position:relative;bottom:0;left:0;width:100%;min-height:124px;z-index:4}@media (min-width:960px){.banner__bottom{min-height:78px}}.banner__bottom-body{padding:16px 0 24px;display:flex;flex-direction:column;justify-content:center}@media (min-width:960px){.banner__bottom-body{flex-direction:row;align-items:center;justify-content:space-between;padding:17px 0}}@media (min-width:1920px){.banner__bottom-body{padding:34px 0}}.banner__bottom-text{text-align:center;margin-bottom:13px}@media (min-width:960px){.banner__bottom-text{margin-bottom:0}}@media (min-width:1360px){.banner__bottom-text{font-size:20px;line-height:23px}
+}@media (min-width:1920px){.banner__bottom-text{font-size:28px;line-height:32px}}.banner__bottom-dowload{display:inline-flex;align-items:center;border-radius:25px;color:#fff;font-weight:600;padding:10px 20px 10px 18px;background:linear-gradient(180deg,#0b6d7a -27.78%,#309fad 67.46%) !important}@media (min-width:1360px){.banner__bottom-dowload{font-size:20px;line-height:24px}}@media (min-width:1920px){.banner__bottom-dowload{font-size:28px;line-height:33px;padding:18px 30px 18px 25px}}.banner__bottom-icon{width:28px;height:28px;margin-right:9px;background-size:cover !important;background-repeat:no-repeat !important}@media (min-width:1360px){.banner__bottom-icon{width:35px;height:35px}}.banner-strong{font-weight:600;font-size:42px;line-height:60px;letter-spacing:.02em;text-transform:uppercase}@media (min-width:480px){.banner-strong{font-size:55px;line-height:66px}}@media (min-width:1360px){.banner-strong{font-size:78.6377px;line-height:94px}}@media (min-width:1920px){.banner-strong{font-size:110px;line-height:131px}
+}@media (min-width:1360px){.item-column__text{font-size:20px;line-height:23px}}@media (min-width:1920px){.item-column__text{font-size:28px;line-height:32px}}.item-column__text+.item-column__text{margin-top:10px}@media (min-width:1920px){.item-column__text+.item-column__text{margin-top:30px}}.item-column+.item-column{margin-top:10px}@media (min-width:960px){.item-column+.item-column{margin-left:25px;margin-top:0}}.label-banner{background:rgba(255,255,255,.14);border-radius:50px}.label-banner__items{padding:9px 71px 9px 16px;display:flex;align-items:center}.label-banner__img{width:48px;height:48px;background-size:cover !important;background-repeat:no-repeat;background-position:50% 50%;margin-right:13px}@media (min-width:1360px){.label-banner__img{width:67px;height:67px}}.label-banner__text{max-width:103px}@media (min-width:1360px){.label-banner__text{font-size:18px;line-height:21px}}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221019153428">
+	<title>Главная</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <nav class="menu">
+                <div class="menu__box">
+                    <button class="menu__icon">
+                        <span></span>
+                    </button>
+                    <div class="menu__icon-text">Меню</div>
+                </div>
+                <div class="menu__items">
+                    <button class="menu__cross" style="background: url('img/menu-cross.svg');"></button>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">О поселке</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Дома/участки в поселки</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Генплан поселка</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Команда отдела продаж</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Галерея</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Презентация</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Инфраструктура</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Расположение поселка</a></li>
+                    </ul>
+                    <div class="menu__items-actions actions-items">
+                        <a class="actions-items__phone-actions phone-actions" href="tel:+7(495)135-13-34">+7 (495)
+                            135-13-34</a>
+                        <button class="actions-items__btn btn-actions">Заказать звонок</button>
+                        <div class="actions-items__social">
+                            <a class="telegram" href="#"><button class="telegram__btn"
+                                    style="background: url('img/telegram.svg');"></button></a>
+                            <a class="whatsapp" href="#"><button class="whatsapp__btn"
+                                    style="background: url('img/whatsapp.svg');"></button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <div class="header__contacts">
+                <div class="actions-items__social">
+                    <a class="telegram" href="#"><button class="telegram__btn"
+                            style="background: url('img/telegram.svg');"></button></a>
+                    <a class="whatsapp" href="#"><button class="whatsapp__btn"
+                            style="background: url('img/whatsapp.svg');"></button></a>
+                </div>
+                <button class="header__contacts-btn btn-actions">Заказать звонок</button>
+                <a class="header__contacts-phone phone-actions" href="tel:+7(495)135-13-34">+7 (495) 135-13-34</a>
+            </div>
+
+        </div>
+    </div>
+</header>
+			<main class="main">
+				<!-- Первый экран -->
+				<section class="banner">
+    <picture><source srcset="img/banner-img-desc.webp" type="image/webp"><img class="banner__img" src="img/banner-img-desc.jpg" alt="Баннер"></picture>
+    <div class="container">
+        <div class="banner__body">
+            <h1 class="banner__title"><span class="banner-strong">Барвиха 21 -</span><span class="banner__title-text">коттеджный поселок на Рублево-Успенском шоссе</span></h1>
+            <div class="banner__columns">
+                <div class="banner__columns-item item-column">
+                    <div class="item-column">
+                        <div class="item-column__text">49 домов в поселке</div>
+                        <div class="item-column__text">Площадь от 478 до 700 м²</div>
+                    </div>
+                    <div class="item-column">
+                        <div class="item-column__text">Цены от 215 млн. ₽</div>
+                        <div class="item-column__text">Площадь поселка 25 Га</div>
+                    </div>
+                </div>
+            </div>
+            <button class="banner__btn btn--white start-form">Получить презентацию</button>
+            <div class="banner__sub-text">Получите презентацию объектов от наших экспертов</div>
+        </div>
+    </div>
+    <div class="banner__label label-banner">
+        <div class="label-banner__items">
+            <div class="label-banner__img" style="background: url('img/banner-label.svg');"></div>
+            <div class="label-banner__text">Расположение на карте</div>
+        </div>
+    </div>
+    <div class="banner__bottom">
+        <div class="container">
+            <div class="banner__bottom-body">
+                <div class="banner__bottom-text">Полная база объектов в поселке Барвиха-21</div>
+                <button class="banner__bottom-btn">
+                    <a class="banner__bottom-dowload" href="#" download><span class="banner__bottom-icon"  style="background: url(img/dowload.svg);"></span><span>Получить презентацию</span></a>
+                </button> 
+            </div>
+        </div>
+    </div>
+</section>
+				<section class="about">
+					<div class="container">
+						<div class="about__body">
+							<div class="about__columns">
+								<div class="about__columns-item">
+									<h4 class="about__title title">
+										<span>О ПОСЁЛКЕ</span>
+										<span class="title-gold">"Барвиха 21"</span>
+									</h4>
+								</div>
+								<div class="about__columns-item">
+									<p class="about__text">Элитный коттеджный поселок «Барвиха-XXI» располагается на 25 га с участками площадью от 27 до 45 соток. Специально посёлка были разработаны современные дома, с высокими потолками, свободной планировкой и большими площадями остекления в стиле Фрэнка Лойда Райта – знаменитого американского архитектора, совершившего революцию в проектировании загородного дома.</p>
+									<p class="about__text">
+										Всего возведено 64 коттеджа 2х и 3х уровневых, выдержанных в едином архитектурном стиле: четкие формы, элегантная отделка фасадов, удобство и комфорт внутреннего пространства. На 2/3 посёлок граничит с Барвихинским лесопарком, который издавна считается лёгкими Запада столицы. К застройке примыкает 20 га лесного массива, где организован уютный парк, площадки для отдыха и детский игровой городок. Поселок хорошо вписан в природное окружение.</p>
+								</div>	
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				<!-- Галерея -->
+				<section class="gallery splide"  aria-label="Beautiful Images">
+    <div class="splide__track">
+      
+      <div class="container container-gallery">
+             <h4 class="gallery__title title">Галерея</h4>
+        <div class="gallery__text">Коттедж в поселке “Барвиха 21”</div>
+        <div  class="quantity">
+            <span class="quantity__current">01</span>
+            <span class="quantity__all">5</span>
+        </div>
+        <div class="splide__arrows splide__arrow-gallery"></div>
+      </div>
+    
+
+
+          <ul class="splide__list"> 
+              <li class="splide__slide gallery__slide">
+                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="gallery__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
+              </li>
+              <li class="splide__slide gallery__slide">
+                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="gallery__slide-img"  loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
+              </li>
+          </ul>
+    </div>
+  </section>
+				<!-- Карточки -->
+				<section class="cards">
+    <div class="container">
+        <div class="cards__body">
+            <h4 class="cards__title title title-card">Дома и участки в поселке “Барвиха 21”</h4>
+            <div class="cards__contols">
+                <button class="cards__control tab">Дома</button>
+                <button class="cards__control">Участки</button>
+            </div>
+            <div class="cards__catalog catalog">
+                <div class="catalog__body">
+                    <div class="catalog__card card">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card card">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card card">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card card">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card card">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="catalog__card card hide">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="catalog__card card hide">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="catalog__card card hide">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="catalog__card card hide">
+                        <div class="card__slider">
+                            <section class="splide card__splide" aria-label="Beautiful Images">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                          <li class="splide__slide">
+                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
+                                      </ul>
+                                </div>
+                              </section>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                680 261 000 руб
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Дом:</span>
+                                <span class="card__content-text">980 м2</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Спален:</span>
+                                <span class="card__content-text">3</span>
+                            </div>
+                            <div class="card__content">
+                                <span class="card__content-title">Отделка:</span>
+                                <span class="card__content-text">Под ключ с мебелью</span>
+                            </div>
+                            <div class="card__btn-wrapper">
+                                <button class="card__bottom-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cards__wrapper-btn">
+            <button class="cards__catalog-btn">Смотреть еще объекты</button>
+        </div>
+    </div>
+</section>
+				<!-- Команда -->
+				<section class="team">
+    <div class="container">
+        <div class="team__body">
+            <div class="team__top">
+                <h4 class="team__title title"><span class="title-gold">КОМАНДА</span> <span>ОТДЕЛА ПРОДАЖ</span></h4>
+                <div class="team__slider">
+                    <section class="splide team__splide" aria-label="Beautiful Images">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide team__slide">
+                                    <div class="team__card">
+                                        <div class="team__card-top card-top">
+                                            <div class="card-top__items">
+                                                <picture><source srcset="img/tqeam1.webp" type="image/webp"><img class="card-top__items-img" loading="lazy" src="img/tqeam1.png" alt="Команда"></picture>
+                                                <div class="card-top__conent">
+                                                    <div class="card-top__content-title">Менеджер по продажам</div>
+                                                    <div class="card-top__content-text">Елена</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="team__card-bottom card-bottom">
+                                            <p class="card-bottom__text">
+                                                Я всегда рада работать с такими проектами, как коттеджный поселок “Барвиха 21”. Каждый дом на территории поселка имеет уникальную архитектуру и планировку - Вы обязательно найдете здесь то, что подходит именно Вам. К продаже доступны дома под чистовую отделку, с ремонтом и даже с готовой меблировкой, а также участки под строительство. 
+                                            </p>
+                                        </div>
+                                        <div class="team__card-bottom">
+
+                                        </div>
+                                    </div>
+                                  </li>
+                                  <li class="splide__slide team__slide">
+                                    <div class="team__card">
+                                        <div class="team__card-top card-top">
+                                            <div class="card-top__items">
+                                                <picture><source srcset="img/tqeam1.webp" type="image/webp"><img class="card-top__items-img" src="img/tqeam1.png" alt="Команда"></picture>
+                                                <div class="card-top__conent">
+                                                    <div class="card-top__content-title">Менеджер по продажам</div>
+                                                    <div class="card-top__content-text">Елена</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="team__card-bottom card-bottom">
+                                            <p class="card-bottom__text">
+                                                Я всегда рада работать с такими проектами, как коттеджный поселок “Барвиха 21”. Каждый дом на территории поселка имеет уникальную архитектуру и планировку - Вы обязательно найдете здесь то, что подходит именно Вам. К продаже доступны дома под чистовую отделку, с ремонтом и даже с готовой меблировкой, а также участки под строительство. 
+                                            </p>
+                                        </div>
+                                        <div class="team__card-bottom">
+
+                                        </div>
+                                    </div>
+                                  </li>
+                                
+                              </ul>
+                        </div>
+                      </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="team__bottom">
+    <div class="team__bottom-title">Получить консультацию</div>
+    <div class="team__bottom-sub-title">Укажите свои контакты и менеджер свяжится с вами</div>
+    <form class="team__form">
+        <div class="team__form-item">
+            <label class="team__form-label" for="team-input">
+                Номер телефона
+             <input class="team__input mask" id="team-input" placeholder="+7( -- )  - -" type="text">
+          </label>
+        </div>
+        <div class="team__form-item">
+           <div class="team__form-wrapper">
+                <button class="team__form-btn">Получить консультацию</button>
+                 <span class="team__form-work">Сейчас работаем</span>
+           </div>
+          
+        </div> 
+    </form>
+</div>
+</div>
+
+				<!-- Преимущества -->
+				<section class="splide travel "  aria-label="Beautiful Images">
+    <div class="splide__track travel__track">
+      <div class="container container-travel">
+            <div class="travel__content-text">
+                <h4 class="travel__title title title-travel">ПРЕИМУЩЕСТВА</h4>
+                 <div class="travel__sub-title">Территория</div>
+                 <p class="travel__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</p>
+            </div>
+            <div class="my-carousel-progress">
+                <div class="my-carousel-progress-bar"></div>
+            </div>
+        <div  class="quantity-travel">
+            <span class="quantity__current">01</span>
+            <span class="quantity__all">4</span>
+        </div>
+        <div class="splide__arrows splide__arrow-travel"></div>
+      </div>
+          <ul class="splide__list"> 
+              <li class="splide__slide travel__slide">
+                    <picture><source srcset="img/travel.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/travel.jpg" alt="Галлерея"></picture>
+              </li>
+              <li class="splide__slide travel__slide">
+                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
+              </li>
+              <li class="splide__slide travel__slide">
+                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
+              </li>
+              <li class="splide__slide travel__slide">
+                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
+              </li>
+           
+          </ul>
+    </div>
+  </section>
+				<div class="travel-form">
+					<div class="container">
+						<div class="travel-form__body">
+							<div class="travel__form-item travel-item">
+								<div class="travel-item__title title">Запишитесь на экскурсию</div>
+								<div class="travel-item__text">Укажите свои контакты и менеджер свяжится с вами для уточнения удобного времени экскурсии.</div>
+							</div>
+							<div class="travel__form-item travel-item">
+								<form class="travel-item__form">
+									<div class="travel__inptuts">
+										<input class="travel-input" placeholder="Введите Ваше Имя" type="text">
+										<input class="travel-input" placeholder="Введите Ваш телефон" type="text">
+									</div>
+									<div class="travel__wrapper-btn">
+										<button class="travel__btn">Отпраить</button>
+									</div>
+									<div class="form__checkbox">
+										<input class="form__checkbox-input" id="formAgreement2" checked type="checkbox" name="agreement">
+										<label class="form__checkbox-label agreetext" for="formAgreement2">Я соглашаюсь на обработку персональных
+											данных</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Контент -->
+				<section class="content">
+    <div class="container container-content">
+        <h4 class="content__title title"><span class="title-gold">Окружение поселка</span> <span>“Барвиха 21”</span></h4>
+    </div>
+    <div class="content__body">
+        <div class="content__columns content-column">
+            <div class="content-column__item item-right">
+                <div class="content-column__item-text content-right">
+                    <div class="content-column__title">Территория</div>
+                    <div class="content-column__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</div>
+                </div>
+                <div class="content-column__item-image content-right">
+                    <picture><source srcset="img/content1.webp" type="image/webp"><img class="content-column__img" loading="lazy" src="img/content1.jpg" alt="Контент"></picture>
+                </div>
+
+            </div>
+            <div class="content-column__item item-left">
+                <div class="content-column__item-text content-right">
+                    <div class="content-column__title">Архитектура</div>
+                    <div class="content-column__text">«Барвихе-XXI» выдержан единый стиль архитектуры Райта. Это невысокие особняки с панорамным остеклением и свободной планировкой. Купив элитную недвижимость в КП «Барвиха-21», вы сможете не беспокоиться о безопасности — покой резидентов защищает круглосуточная служба охраны.</div>
+                </div>
+                <div class="content-column__item-image content-left">
+                    <picture><source srcset="img/content2.webp" type="image/webp"><img class="content-column__img" loading="lazy"  src="img/content2.jpg" alt="Контент"></picture>
+                </div>
+            </div>
+            <div class="content-column__item item-right">
+                <div class="content-column__item-text content-right">
+                    <div class="content-column__title">Территория</div>
+                    <div class="content-column__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</div>
+                </div>
+                <div class="content-column__item-image content-right">
+                    <picture><source srcset="img/content1.webp" type="image/webp"><img class="content-column__img" loading="lazy"  src="img/content1.jpg" alt="Контент"></picture>
+                </div>
+
+            </div>
+            <div class="content-column__item item-left">
+                <div class="content-column__item-text content-right">
+                    <div class="content-column__title">Архитектура</div>
+                    <div class="content-column__text">«Барвихе-XXI» выдержан единый стиль архитектуры Райта. Это невысокие особняки с панорамным остеклением и свободной планировкой. Купив элитную недвижимость в КП «Барвиха-21», вы сможете не беспокоиться о безопасности — покой резидентов защищает круглосуточная служба охраны.</div>
+                </div>
+                <div class="content-column__item-image content-left">
+                    <picture><source srcset="img/content2.webp" type="image/webp"><img class="content-column__img" loading="lazy"  src="img/content2.jpg" alt="Контент"></picture>
+                </div>
+            </div>
+            <div class="content-column__item item-right">
+                <div class="content-column__item-text content-right">
+                    <div class="content-column__title">Территория</div>
+                    <div class="content-column__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</div>
+                </div>
+                <div class="content-column__item-image content-right">
+                    <picture><source srcset="img/content1.webp" type="image/webp"><img class="content-column__img" loading="lazy"  src="img/content1.jpg" alt="Контент"></picture>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+				<!-- Похожие поселки -->
+				<section class="other">
+    <div class="container">
+        <div class="other__body">
+            <h4 class="other__title title title-other"><span class="title-gold">ПОСМОТРИТЕ</span><span>ПОХОЖИЕ ПОСЕЛКИ</span></h4>
+            <section class="splide other__splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide other__slide">
+                            <div class="other__card">
+                                <div class="other__card-title">Барвиха хиллс</div>
+                                <div class="other__card-text">Рублево-Успенское шоссе, 10 км</div>
+                                <picture><source srcset="img/other1.webp" type="image/webp"><img class="other__card-img" src="img/other1.jpg" alt="Картинка"></picture>
+                                <div class="other__btn-wrapper">
+                                    <button class="other__btn">Смотреть поселок</button>
+                                </div>
+                            </div>
+                          </li>
+                      </ul>
+                </div>
+              </section>
+        </div>
+    </div>
+</section>
+				<!-- Расположени -->
+				<section class="location">
+    <div class="container">
+        <div class="location__body">
+            <h4 class="location__title title"><span class="title-gold">РАСПОЛОЖЕНИЕ</span><span>ПОСЕЛКА</span></h4>
+            <div class="location__column">
+                <div class="location__column-item location__item-image">
+                    <picture><source srcset="img/location.webp" type="image/webp"><img class="location__img" loading="lazy" src="img/location.jpg" alt="Расположение поселка"></picture>
+                </div>
+                <div class="location__column-item">
+                    <h4 class="location__title title location-title-hide"><span class="title-gold">РАСПОЛОЖЕНИЕ</span><span>ПОСЕЛКА</span></h4>
+                    <p class="location__text">
+                        Поселок уникален своим месторасположением, всего 5 км от МКАД по Рублево-Успенскому шоссе. От шоссе в «Барвиху XXI» ведет освещенная лесная дорога.
+                    </p>
+                    <div class="location__sub-text">Круглосуточная горячая линия:</div>
+                         <a class="location__contacts-phone phone-actions location-phone" href="tel:+7(495)135-13-34">+7 (495) 135-13-34</a>
+                    <div class="location__actions">
+                        <button class="location__contacts-btn btn-actions contacts-location">Заказать звонок</button>
+                        <div class="actions-items__social">
+                            <a class="telegram " href="#"><button class="telegram__btn telegram-black"
+                                    style="background: url('img/telegram-black.svg');"></button></a>
+                            <a class="whatsapp " href="#"><button class="whatsapp__btn whatsapp-black"
+                                    style="background: url('img/whatsapp-black.svg');"></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yandex-map" id="map" data-map="55.751574, 37.573856">
+        
+    </div>
+    
+</section>
+				
+			</main>
+			<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__top">
+                <div class="footer__top-item">
+                    <ul class="foter__list">
+                        <li class="footer__list-item"><a class="footer__list-link" href="">О поселке</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Дома/участки в поселке</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Генплан поселка</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Команда отдела продаж</a></li>  
+                    </ul>
+                </div>
+                <div class="footer__top-item">
+                    <ul class="foter__list">
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Галерея</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href=""> Презентация</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Инфраструктура</a></li>  
+                        <li class="footer__list-item"><a class="footer__list-link" href="">Расположенеи поселка</a></li>  
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-text">Нужна помощь? Позвоните или напишите в чат эксперту проекта</div>
+                <div class="footer__actions">
+                    <div class="actions-items__social">
+                        <a class="telegram" href="#"><button class="telegram__btn telegram-footer"
+                                style="background: url('img/telegram.svg');"></button></a>
+                        <a class="whatsapp" href="#"><button class="whatsapp__btn whatsapp-footer"
+                                style="background: url('img/whatsapp.svg');"></button></a>
+                    </div>
+                    <a class="footer__contacts-phone phone-actions" href="tel:+7(495)135-13-34">+7 (495) 135-13-34</a>
+                </div>
+                 <button class="footer__contacts-btn btn-actions">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+</footer>
+			<!-- Модальные окна -->
+			<form class="form">
+    <div class="form__wrapper">
+        <div class="form__body">
+            <div class="form__cross"></div>
+            <div class="form__top">
+                <div class="form__title">Полная база объектов в поселке Барвиха 21 - получить презентацию</div>
+                <div class="form__inputs">
+                    <input class="form__input input-form" placeholder="Введите Ваше Имя" type="text">
+                    <input class="form__input input-form" placeholder="Введите Ваш телефон" type="tel">
+                </div>
+                <div class="form__btn-wrapper">
+                    <button class="form-btn">Отправить</button>
+                </div>
+                <div class="form__checkbox">
+                    <input class="form__checkbox-input" id="formAgreement" checked type="checkbox" name="agreement">
+                    <label class="form__checkbox-label" for="formAgreement">Я соглашаюсь на обработку персональных
+                        данных</label>
+                </div>
+                <div class="form__text">Получите презентацию объектов от наших экспертов</div>
+            </div>
+            <div class="form__bottom">
+                <div class="form__bottom-img"></div>
+                <div class="form__bottom-arrow"></div>
+            </div>
+
+        </div>
+    </div>
+</form>
+		</div>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20221019153428>"></script>
+		<script src="js/app.min.js?_v=20221019153428"></script>
+	</body>
+</html>
