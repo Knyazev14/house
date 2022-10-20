@@ -19,14 +19,6 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
 	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20221020173253"> -->
 		 
 	<title>Главная</title>
-		<script>
-		window.onload =function(){
-	const link = document.createElement('link');
-	link.setAttribute('rel', 'stylesheet');
-	link.setAttribute('href', 'css/style.min.css');
-	document.head.appendChild(link)
-}
-		 </script>
 </head>
 	<body>
 		<div class="wrapper">
@@ -885,12 +877,17 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
   
 </form>
 		</div>
-<!-- 		<link rel="preload" href="css/style.min.css?_v=20221020173253" as="style" onload="this.rel='stylesheet'"> -->
-	
+			<script>
+		window.onload =function(){
+	const link = document.createElement('link');
+	link.setAttribute('rel', 'stylesheet');
+	link.setAttribute('href', 'css/style.min.css');
+	document.head.appendChild(link)
+}
+		 </script>
 		<!-- <script  src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey&_v=20221020173253>"></script> -->
 			<script src="js/app.min.js?_v=20221020173253"></script> 
 		<!-- <script>
-
 			let script;
 			 function loadJs(url){
 					script = document.createElement('script');
