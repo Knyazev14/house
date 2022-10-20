@@ -170,8 +170,11 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
 		      </picture>
               </li>
               <li class="splide__slide gallery__slide">
-                    <picture><source srcset="img/gallery.webp" type="image/webp"><img class="gallery__slide-img"  loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
-              </li>
+                 <picture>
+			    <source media="(min-width: 1920px)" srcset="img/gallery.webp" type="image/webp">
+	    			<source media="(min-width: 320px)" srcset="img/gallery-960.webp" type="image/webp">
+			    	<img class="gallery__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея">
+		      </picture>
           </ul>
     </div>
   </section>
@@ -236,18 +239,16 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
                                 <div class="splide__track">
                                       <ul class="splide__list">
                                           <li class="splide__slide">
-                                            <picture>
-			    <source media="(min-width: 1920px)" srcset="img/gallery.webp" type="image/webp">
-	    			<source media="(min-width: 320px)" srcset="img/gallery-960.webp" type="image/webp">
-			    	<img class="gallery__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея">
-		      </picture>
+                                    <picture>
+						      <source srcset="img/slide-card1.webp" type="image/webp">
+						      <img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
                                           </li>
                                           <li class="splide__slide">
-                                             <picture>
-			    <source media="(min-width: 1920px)" srcset="img/gallery.webp" type="image/webp">
-	    			<source media="(min-width: 320px)" srcset="img/gallery-960.webp" type="image/webp">
-			    	<img class="gallery__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея">
-		      </picture>
+                                <picture>
+						      <source srcset="img/slide-card1.webp" type="image/webp">
+						      <img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                          </li>
                                           </li>
                                       </ul>
                                 </div>
@@ -316,7 +317,9 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
                                 <div class="splide__track">
                                       <ul class="splide__list">
                                           <li class="splide__slide">
-                                              <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
+                                              <picture>
+						      <source srcset="img/slide-card1.webp" type="image/webp">
+						      <img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
                                           </li>
                                           <li class="splide__slide">
                                               <picture><source srcset="img/slide-card1.webp" type="image/webp"><img class="card__splide-img" loading="lazy" src="img/slide-card1.jpg" alt="Слайд"></picture>
