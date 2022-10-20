@@ -20,11 +20,12 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
 		 
 	<title>Главная</title>
 		<script>
-			window.onload = function(){
+		window.onload = setTimeout(function(){
 	const link = document.createElement('link');
 	link.setAttribute('rel', 'stylesheet');
 	link.setAttribute('href', 'css/style.min.css');
-	document.head.appendChild(link);
+	document.head.appendChild(link)
+}, 10000) 
 }
 		 </script>
 </head>
