@@ -5,17 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Bold.woff2") format("woff2"),url("fonts/Gilroy-Bold.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Regular.woff2") format("woff2"),url("fonts/Gilroy-Regular.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Semibold.woff2") format("woff2"),url("fonts/Gilroy-Semibold.woff") format("woff");font-weight:600;font-style:normal}.header__body{display:flex;justify-content:space-between;padding-top:53px;position:relative;z-index:5}.header__contacts{display:flex;align-items:center;position:relative}.header__contacts-btn{margin-bottom:10px;margin-left:22px}@media (min-width:960px){.header__contacts-btn{order:2;margin-left:16px;margin-bottom:0}
-}.header__contacts-phone{position:absolute;bottom:-18px;right:10px}@media (min-width:960px){.header__contacts-phone{position:static;margin-left:12px}}.menu.active .menu__items{left:0}@media (min-width:960px){.menu__box{display:flex}}@media (min-width:1920px){.menu__box{align-items:center}}.menu__icon{width:34px;height:16px;position:relative;margin-bottom:15px;line-height:19px}@media (min-width:960px){.menu__icon{margin-right:20px}}@media (min-width:1920px){.menu__icon{width:40px;height:20px;margin-bottom:0}}.menu__icon:before,.menu__icon:after,.menu__icon span{background:#fff;position:absolute;left:0;width:100%;height:2px}.menu__icon:before{content:'';top:0}.menu__icon:after{content:'';bottom:0}.menu__icon span{top:50%;transform:translate(0,-50%)}.menu__icon-text{color:#fff}@media (min-width:1366px){.menu__icon-text{font-size:18px}}@media (min-width:1920px){.menu__icon-text{font-size:25px}}.menu__items{position:fixed;top:0;left:-100%;background:#242424;width:100%;height:100%;z-index:50;display:flex;align-items:center;flex-direction:column;padding:100px 15px;overflow-y:auto;transition:left .3s ease}
-@media (min-width:960px){.menu__items{width:50%;overflow:auto;-ms-overflow-style:none;scrollbar-width:none}}.menu__items::-webkit-scrollbar{width:0;height:0}.menu__cross{position:absolute;top:20px;right:30px;width:20px;height:20px;background-repeat:no-repeat;background-size:cover !important}.menu__list{display:flex;flex-direction:column;align-items:center;margin-bottom:90px}.menu__list-item+.menu__list-item{margin-top:18px}.menu__list-link{color:#fff}@media (min-width:1366px){.menu__list-link{font-size:24px;line-height:28px}}.actions-items{display:flex;flex-direction:column;align-items:center}.actions-items__phone-actions{font-weight:600;font-size:24px;line-height:29px;margin-bottom:17px}.actions-items__btn{margin-bottom:37px}.actions-items__social{max-width:75px;display:flex;align-items:center;justify-content:space-between}.phone-actions{color:#fff;line-height:19px}@media (min-width:1366px){.phone-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.phone-actions{font-size:25px;line-height:29px}
-}.btn-actions{color:#fff;line-height:19px;border:.883234px solid #fff;border-radius:88.3234px;padding:8px 20px}@media (min-width:1366px){.btn-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.btn-actions{font-size:25px;line-height:29px}}.telegram{margin-right:12px}.telegram__btn{width:17px;height:14px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.telegram__btn{width:28px;height:23px}}.whatsapp__btn{width:18px;height:17px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.whatsapp__btn{width:28px;height:27px}}.banner:before{content:'';position:absolute;top:0;left:0;bottom:0;width:100%;background:rgba(0,0,0,.65);z-index:4}.banner{position:relative;top:-105px}.banner__img{position:absolute;top:0;left:0;background-repeat:no-repeat;object-fit:cover !important;background-position:50% 50%;width:100%;height:100%}.banner__body{position:relative;z-index:4;padding-top:190px;height:100%}.banner__title{display:inline-flex;flex-direction:column}
-.banner__title-text{font-size:28px;line-height:35px;max-width:384px;margin-bottom:22px}@media (min-width:1360px){.banner__title-text{font-size:42px;line-height:49px;max-width:546px;margin-bottom:51px}}@media (min-width:1920px){.banner__title-text{font-size:50px;line-height:70px;max-width:650px}}@media (min-width:960px){.banner__columns-item{display:flex}}.banner__btn{margin-top:50px;padding:17px 34px;margin-bottom:15px}@media (min-width:1360px){.banner__btn{margin-top:70px}}@media (min-width:1920px){.banner__btn{font-size:28px;line-height:34px}}.banner__sub-text{font-size:14px;line-height:20px;max-width:196px;margin-bottom:190px}@media (min-width:960px){.banner__sub-text{margin-bottom:30px}}@media (min-width:1920px){.banner__sub-text{font-size:22px;line-height:34px;max-width:330px}}.banner__label{position:absolute;bottom:156px;right:-20px;z-index:4;cursor:pointer}@media (min-width:960px){.banner__label{bottom:110px}}@media (min-width:1920px){.banner__label{bottom:170px}}.banner__bottom{background:rgba(255,255,255,.3);backdrop-filter:blur(19.2999px);position:relative;bottom:0;left:0;width:100%;min-height:124px;z-index:4}
-@media (min-width:960px){.banner__bottom{min-height:78px}}.banner__bottom-body{padding:16px 0 24px;display:flex;flex-direction:column;justify-content:center}@media (min-width:960px){.banner__bottom-body{flex-direction:row;align-items:center;justify-content:space-between;padding:17px 0}}@media (min-width:1920px){.banner__bottom-body{padding:34px 0}}.banner__bottom-text{text-align:center;margin-bottom:13px}@media (min-width:960px){.banner__bottom-text{margin-bottom:0}}@media (min-width:1360px){.banner__bottom-text{font-size:20px;line-height:23px}}@media (min-width:1920px){.banner__bottom-text{font-size:28px;line-height:32px}}.banner__bottom-dowload{display:inline-flex;align-items:center;border-radius:25px;color:#fff;font-weight:600;padding:10px 20px 10px 18px;background:linear-gradient(180deg,#0b6d7a -27.78%,#309fad 67.46%) !important}@media (min-width:1360px){.banner__bottom-dowload{font-size:20px;line-height:24px}}@media (min-width:1920px){.banner__bottom-dowload{font-size:28px;line-height:33px;padding:18px 30px 18px 25px}
-}.banner__bottom-icon{width:28px;height:28px;margin-right:9px;background-size:cover !important;background-repeat:no-repeat !important}@media (min-width:1360px){.banner__bottom-icon{width:35px;height:35px}}.banner-strong{font-weight:600;font-size:42px;line-height:60px;letter-spacing:.02em;text-transform:uppercase}@media (min-width:480px){.banner-strong{font-size:55px;line-height:66px}}@media (min-width:1360px){.banner-strong{font-size:78.6377px;line-height:94px}}@media (min-width:1920px){.banner-strong{font-size:110px;line-height:131px}}@media (min-width:1360px){.item-column__text{font-size:20px;line-height:23px}}@media (min-width:1920px){.item-column__text{font-size:28px;line-height:32px}}.item-column__text+.item-column__text{margin-top:10px}@media (min-width:1920px){.item-column__text+.item-column__text{margin-top:30px}}.item-column+.item-column{margin-top:10px}@media (min-width:960px){.item-column+.item-column{margin-left:25px;margin-top:0}}.label-banner{background:rgba(255,255,255,.14);border-radius:50px}
-.label-banner__items{padding:9px 71px 9px 16px;display:flex;align-items:center}.label-banner__img{width:48px;height:48px;background-size:cover !important;background-repeat:no-repeat;background-position:50% 50%;margin-right:13px}@media (min-width:1360px){.label-banner__img{width:67px;height:67px}}.label-banner__text{max-width:103px}@media (min-width:1360px){.label-banner__text{font-size:18px;line-height:21px}}
+		@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Regular.woff2") format("woff2"),url("fonts/Gilroy-Regular.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Semibold.woff2") format("woff2"),url("fonts/Gilroy-Semibold.woff") format("woff");font-weight:600;font-style:normal}@font-face{font-family:Gilroy;font-display:swap;src:url("fonts/Gilroy-Bold.woff2") format("woff2"),url("fonts/Gilroy-Bold.woff") format("woff");font-weight:700;font-style:normal}*{margin:0;padding:0;border:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:18px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}input,button,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}
+a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}button{background-color:transparent;cursor:pointer}span{display:inline-block}a{color:#000}body{font-family:Gilroy;font-size:16px;color:#fff;overflow:auto;-ms-overflow-style:none;scrollbar-width:none}body::-webkit-scrollbar{width:0;height:0}body.lock{overflow:hidden}.wrapper{display:flex;flex-direction:column;min-height:100%;overflow-x:hidden}.container{max-width:390px;margin:0 auto;padding:0 15px}@media (min-width:640px){.container{max-width:500px}}@media (min-width:960px){.container{max-width:860px}}@media (min-width:1360px){.container{max-width:1080px}}@media (min-width:1920px){.container{max-width:1490px}}.btn--white{background:#fff;border-radius:25px;color:rgba(44,44,44,.85);font-weight:700}@media (min-width:960px){.btn--white{font-size:20px;line-height:24px}}.title{font-weight:600;font-size:36px;line-height:49px;text-align:center;letter-spacing:.02em;text-transform:uppercase;color:#322b2b}
+@media (min-width:960px){.title{font-size:25px;line-height:34px}}@media (min-width:1360px){.title{font-size:36px;line-height:49px}}@media (min-width:1920px){.title{font-size:50px;line-height:70px}}.title-gold{color:#b4a775}#map{margin-bottom:-5px;filter:grayscale(100%)}@media (min-width:640px){#map{height:400px}}@media (min-width:1920px){#map{height:600px}}.hide{display:none}.header__body{display:flex;justify-content:space-between;padding-top:53px;position:relative;z-index:5}.header__contacts{display:flex;align-items:center;position:relative}.header__contacts-btn{margin-bottom:10px;margin-left:22px}@media (min-width:960px){.header__contacts-btn{order:2;margin-left:16px;margin-bottom:0}}.header__contacts-phone{position:absolute;bottom:-18px;right:10px}@media (min-width:960px){.header__contacts-phone{position:static;margin-left:12px}}.menu.active .menu__items{left:0}@media (min-width:960px){.menu__box{display:flex}}@media (min-width:1920px){.menu__box{align-items:center}}.menu__icon{width:34px;height:16px;position:relative;margin-bottom:15px;line-height:19px}
+@media (min-width:960px){.menu__icon{margin-right:20px}}@media (min-width:1920px){.menu__icon{width:40px;height:20px;margin-bottom:0}}.menu__icon:before,.menu__icon:after,.menu__icon span{background:#fff;position:absolute;left:0;width:100%;height:2px}.menu__icon:before{content:'';top:0}.menu__icon:after{content:'';bottom:0}.menu__icon span{top:50%;transform:translate(0,-50%)}.menu__icon-text{color:#fff}@media (min-width:1366px){.menu__icon-text{font-size:18px}}@media (min-width:1920px){.menu__icon-text{font-size:25px}}.menu__items{position:fixed;top:0;left:-100%;background:#242424;width:100%;height:100%;z-index:50;display:flex;align-items:center;flex-direction:column;padding:100px 15px;overflow-y:auto;transition:left .3s ease}@media (min-width:960px){.menu__items{width:50%;overflow:auto;-ms-overflow-style:none;scrollbar-width:none}}.menu__items::-webkit-scrollbar{width:0;height:0}.menu__cross{position:absolute;top:20px;right:30px;width:20px;height:20px;background-repeat:no-repeat;background-size:cover !important}
+.menu__list{display:flex;flex-direction:column;align-items:center;margin-bottom:90px}.menu__list-item+.menu__list-item{margin-top:18px}.menu__list-link{color:#fff}@media (min-width:1366px){.menu__list-link{font-size:24px;line-height:28px}}.actions-items{display:flex;flex-direction:column;align-items:center}.actions-items__phone-actions{font-weight:600;font-size:24px;line-height:29px;margin-bottom:17px}.actions-items__btn{margin-bottom:37px}.actions-items__social{max-width:75px;display:flex;align-items:center;justify-content:space-between}.phone-actions{color:#fff;line-height:19px}@media (min-width:1366px){.phone-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.phone-actions{font-size:25px;line-height:29px}}.btn-actions{color:#fff;line-height:19px;border:.883234px solid #fff;border-radius:88.3234px;padding:8px 20px}@media (min-width:1366px){.btn-actions{font-size:18px;line-height:20px}}@media (min-width:1920px){.btn-actions{font-size:25px;line-height:29px}}.telegram{margin-right:12px}
+.telegram__btn{width:17px;height:14px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.telegram__btn{width:28px;height:23px}}.whatsapp__btn{width:18px;height:17px;background-repeat:no-repeat;background-size:cover !important}@media (min-width:1366px){.whatsapp__btn{width:28px;height:27px}}.banner:before{content:'';position:absolute;top:0;left:0;bottom:0;width:100%;background:rgba(0,0,0,.65);z-index:4}.banner{position:relative;top:-105px}.banner__img{position:absolute;top:0;left:0;background-repeat:no-repeat;object-fit:cover !important;background-position:50% 50%;width:100%;height:100%}.banner__body{position:relative;z-index:4;padding-top:190px;height:100%}.banner__title{display:inline-flex;flex-direction:column}.banner__title-text{font-size:28px;line-height:35px;max-width:384px;margin-bottom:22px}@media (min-width:1360px){.banner__title-text{font-size:42px;line-height:49px;max-width:546px;margin-bottom:51px}}@media (min-width:1920px){.banner__title-text{font-size:50px;line-height:70px;max-width:650px}
+}@media (min-width:960px){.banner__columns-item{display:flex}}.banner__btn{margin-top:50px;padding:17px 34px;margin-bottom:15px}@media (min-width:1360px){.banner__btn{margin-top:70px}}@media (min-width:1920px){.banner__btn{font-size:28px;line-height:34px}}.banner__sub-text{font-size:14px;line-height:20px;max-width:196px;margin-bottom:190px}@media (min-width:960px){.banner__sub-text{margin-bottom:30px}}@media (min-width:1920px){.banner__sub-text{font-size:22px;line-height:34px;max-width:330px}}.banner__label{position:absolute;bottom:156px;right:-20px;z-index:4;cursor:pointer}@media (min-width:960px){.banner__label{bottom:110px}}@media (min-width:1920px){.banner__label{bottom:170px}}.banner__bottom{background:rgba(255,255,255,.3);backdrop-filter:blur(19.2999px);position:relative;bottom:0;left:0;width:100%;min-height:124px;z-index:4}@media (min-width:960px){.banner__bottom{min-height:78px}}.banner__bottom-body{padding:16px 0 24px;display:flex;flex-direction:column;justify-content:center}@media (min-width:960px){.banner__bottom-body{flex-direction:row;align-items:center;justify-content:space-between;padding:17px 0}
+}@media (min-width:1920px){.banner__bottom-body{padding:34px 0}}.banner__bottom-text{text-align:center;margin-bottom:13px}@media (min-width:960px){.banner__bottom-text{margin-bottom:0}}@media (min-width:1360px){.banner__bottom-text{font-size:20px;line-height:23px}}@media (min-width:1920px){.banner__bottom-text{font-size:28px;line-height:32px}}.banner__bottom-dowload{display:inline-flex;align-items:center;border-radius:25px;color:#fff;font-weight:600;padding:10px 20px 10px 18px;background:linear-gradient(180deg,#0b6d7a -27.78%,#309fad 67.46%) !important}@media (min-width:1360px){.banner__bottom-dowload{font-size:20px;line-height:24px}}@media (min-width:1920px){.banner__bottom-dowload{font-size:28px;line-height:33px;padding:18px 30px 18px 25px}}.banner__bottom-icon{width:28px;height:28px;margin-right:9px;background-size:cover !important;background-repeat:no-repeat !important}@media (min-width:1360px){.banner__bottom-icon{width:35px;height:35px}}.banner-strong{font-weight:600;font-size:42px;line-height:60px;letter-spacing:.02em;text-transform:uppercase}
+@media (min-width:480px){.banner-strong{font-size:55px;line-height:66px}}@media (min-width:1360px){.banner-strong{font-size:78.6377px;line-height:94px}}@media (min-width:1920px){.banner-strong{font-size:110px;line-height:131px}}@media (min-width:1360px){.item-column__text{font-size:20px;line-height:23px}}@media (min-width:1920px){.item-column__text{font-size:28px;line-height:32px}}.item-column__text+.item-column__text{margin-top:10px}@media (min-width:1920px){.item-column__text+.item-column__text{margin-top:30px}}.item-column+.item-column{margin-top:10px}@media (min-width:960px){.item-column+.item-column{margin-left:25px;margin-top:0}}.label-banner{background:rgba(255,255,255,.14);border-radius:50px}.label-banner__items{padding:9px 71px 9px 16px;display:flex;align-items:center}.label-banner__img{width:48px;height:48px;background-size:cover !important;background-repeat:no-repeat;background-position:50% 50%;margin-right:13px}@media (min-width:1360px){.label-banner__img{width:67px;height:67px}
+}.label-banner__text{max-width:103px}@media (min-width:1360px){.label-banner__text{font-size:18px;line-height:21px}}
 	</style>
-	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20221019163236"> -->
-<!-- 	<link rel="preload" href="css/style.min.css?_v=20221019163236" as="style" onload="this.rel='stylesheet'"> -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20221020112728"> -->
 	<title>Главная</title>
 </head>
 	<body>
@@ -73,11 +74,7 @@
 			<main class="main">
 				<!-- Первый экран -->
 				<section class="banner">
-    <picture>
-	    <source srcset="img/location.webp" type="image/webp"  media="(min-width: 700px)">
-	    <source srcset="img/banner-img-desc.webp" type="image/webp">
-	    <img class="banner__img" src="img/banner-img-desc.jpg" alt="Баннер">
-</picture>
+    <picture><source srcset="img/banner-img-desc.webp" type="image/webp"><img class="banner__img" src="img/banner-img-desc.jpg" alt="Баннер"></picture>
     <div class="container">
         <div class="banner__body">
             <h1 class="banner__title"><span class="banner-strong">Барвиха 21 -</span><span class="banner__title-text">коттеджный поселок на Рублево-Успенском шоссе</span></h1>
@@ -571,11 +568,11 @@
     <div class="team__bottom">
     <div class="team__bottom-title">Получить консультацию</div>
     <div class="team__bottom-sub-title">Укажите свои контакты и менеджер свяжится с вами</div>
-    <form class="team__form">
+    <form class="team__form form-consultation">
         <div class="team__form-item">
             <label class="team__form-label" for="team-input">
                 Номер телефона
-             <input class="team__input mask" id="team-input" placeholder="+7( -- )  - -" type="text">
+             <input class="team__input mask req" id="team-input" placeholder="+7( -- )  - -" type="text">
           </label>
         </div>
         <div class="team__form-item">
@@ -593,11 +590,6 @@
 				<section class="splide travel "  aria-label="Beautiful Images">
     <div class="splide__track travel__track">
       <div class="container container-travel">
-            <div class="travel__content-text">
-                <h4 class="travel__title title title-travel">ПРЕИМУЩЕСТВА</h4>
-                 <div class="travel__sub-title">Территория</div>
-                 <p class="travel__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</p>
-            </div>
             <div class="my-carousel-progress">
                 <div class="my-carousel-progress-bar"></div>
             </div>
@@ -609,9 +601,23 @@
       </div>
           <ul class="splide__list"> 
               <li class="splide__slide travel__slide">
+                <div class="container container-travel">
+                    <div class="travel__content-text">
+                        <h4 class="travel__title title title-travel">ПРЕИМУЩЕСТВА</h4>
+                         <div class="travel__sub-title">Территория</div>
+                         <p class="travel__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</p>
+                    </div>
+              </div>
                     <picture><source srcset="img/travel.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/travel.jpg" alt="Галлерея"></picture>
               </li>
               <li class="splide__slide travel__slide">
+                <div class="container container-travel">
+                    <div class="travel__content-text">
+                        <h4 class="travel__title title title-travel">ПРЕИМУЩЕСТВА</h4>
+                         <div class="travel__sub-title">Территория</div>
+                         <p class="travel__text">Рядом с Барвихинским лесопарком, на площади в 45 гектаров, располагаются 64 домовладения. Максимальная площадь участка — 45 соток. Дома площадью от 600 до 1400 квадратных метров органично смотрятся на фоне высоких деревьев.</p>
+                    </div>
+              </div>
                     <picture><source srcset="img/gallery.webp" type="image/webp"><img class="travel__slide-img" loading="lazy" src="img/gallery.jpg" alt="Галлерея"></picture>
               </li>
           </ul>
@@ -627,14 +633,14 @@
 							<div class="travel__form-item travel-item">
 								<form class="travel-item__form">
 									<div class="travel__inptuts">
-										<input class="travel-input" placeholder="Введите Ваше Имя" type="text">
-										<input class="travel-input" placeholder="Введите Ваш телефон" type="text">
+										<input class="travel-input req" placeholder="Введите Ваше Имя" type="text">
+										<input class="travel-input mask req" placeholder="Введите Ваш телефон" type="text">
 									</div>
 									<div class="travel__wrapper-btn">
 										<button class="travel__btn">Отпраить</button>
 									</div>
 									<div class="form__checkbox">
-										<input class="form__checkbox-input" id="formAgreement2" checked type="checkbox" name="agreement">
+										<input class="form__checkbox-input req" id="formAgreement2" checked type="checkbox" name="agreement">
 										<label class="form__checkbox-label agreetext" for="formAgreement2">Я соглашаюсь на обработку персональных
 											данных</label>
 									</div>
@@ -799,21 +805,20 @@
     </div>
 </footer>
 			<!-- Модальные окна -->
-			<form class="form">
-    <div class="form__wrapper">
+			<form class="form form-popup">
         <div class="form__body">
             <div class="form__cross"></div>
             <div class="form__top">
                 <div class="form__title">Полная база объектов в поселке Барвиха 21 - получить презентацию</div>
                 <div class="form__inputs">
-                    <input class="form__input input-form" placeholder="Введите Ваше Имя" type="text">
-                    <input class="form__input input-form" placeholder="Введите Ваш телефон" type="tel">
+                    <input class="form__input input-form req" placeholder="Введите Ваше Имя" type="text">
+                    <input class="form__input input-form mask req" placeholder="Введите Ваш телефон" type="tel">
                 </div>
                 <div class="form__btn-wrapper">
                     <button class="form-btn">Отправить</button>
                 </div>
                 <div class="form__checkbox">
-                    <input class="form__checkbox-input" id="formAgreement" checked type="checkbox" name="agreement">
+                    <input class="form__checkbox-input req" id="formAgreement" checked type="checkbox" name="agreement">
                     <label class="form__checkbox-label" for="formAgreement">Я соглашаюсь на обработку персональных
                         данных</label>
                 </div>
@@ -825,24 +830,11 @@
             </div>
 
         </div>
-    </div>
+  
 </form>
 		</div>
-		<link rel="preload" href="css/style.min.css?_v=20221019163236" as="style" onload="this.rel='stylesheet'">
-<!-- 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script> -->
-	<script>
-document.addEventListener('DOMContentLoaded', function (){
-		[
-			'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ',
-			'js/app.min.js?_v=20221019163236'].forEach(src=>{
-				const script = document.createElement('script');
-					script.type = 'text/javascript';
-					script.src = src;
-					script.async = false;
-					document.body.appendChild(script);
-			})
-})
-	</script>
-<!-- 		<script defer src="js/app.min.js?_v=20221019163236"></script> -->
+		<link rel="preload" href="css/style.min.css?_v=20221020112728" as="style" onload="this.rel='stylesheet'">
+		<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey&_v=20221020112728>"></script>
+		<script defer src="js/app.min.js?_v=20221020112728"></script>
 	</body>
 </html>
