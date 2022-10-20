@@ -847,7 +847,21 @@ a,a:visited{text-decoration:none}a:hover{text-decoration:0}ul li{list-style:none
 </form>
 		</div>
 		<link rel="preload" href="css/style.min.css?_v=20221020112728" as="style" onload="this.rel='stylesheet'">
-		<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey&_v=20221020112728>"></script>
-		<script defer src="js/app.min.js?_v=20221020112728"></script>
+<!-- 		<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey&_v=20221020112728>"></script> -->
+		<script>
+			let script;
+			 function loadJs(url){
+					script = document.createElement('script');
+					script.src = url
+					script.type = 'text/javascript'
+					document.body.appendChild(script);
+			}
+			loadJs('js/app.min.js');
+			script.onload = function (){
+				console.log('load')
+			}
+
+		</script>
+<!-- 		<script defer src="js/app.min.js?_v=20221020112728"></script> -->
 	</body>
 </html>
